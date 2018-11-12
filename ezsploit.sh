@@ -39,7 +39,7 @@ echo -e "\e[97m                      ______
 tput sgr0                                       # 
 echo -e "\e[31m_________________________[ \e[97mSELECT AN OPTION TO BEGIN \e[31m]"
 echo -e "\E[1;33m::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::"
-echo -e "\E[1;33m:::\e[97m[1] \e[90mPayload       \e[97m [Create a payload with msvenom]  \E[1;33m"
+echo -e "\E[1;33m:::\e[97m[1] \e[90mPayload       \e[97m [Create a payload with msfvenom]  \E[1;33m"
 tput sgr0                               # Reset colors to "normal."
 echo -e "\E[1;33m:::\e[97m[2] \e[32mListen    \e[97m [Start a multi handler]   \E[1;33m"
 tput sgr0
@@ -91,7 +91,7 @@ do
             echo -e "\E[1;33m::::: \e[97mshell.apk saved to ~/Desktop/temp\E[1;33m:::::"
             ;;  
         "List_All")
-            xterm -e msvenom -l &
+            xterm -e msfvenom -l &
             ;;   
         "Quit")
             echo "Good Bye" && break
